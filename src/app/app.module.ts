@@ -3,6 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ButtonsModule } from '@progress/kendo-angular-buttons';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AuthRoutingModule } from './auth/auth-routing.module';
+
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -10,7 +18,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ButtonsModule,
+    BrowserAnimationsModule,
+    AuthRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
